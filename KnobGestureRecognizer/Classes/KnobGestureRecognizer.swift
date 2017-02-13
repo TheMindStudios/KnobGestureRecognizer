@@ -20,7 +20,7 @@ open class KnobGestureRecognizer: UIGestureRecognizer {
     /// distance from anchor point
     fileprivate(set) open var radius: Float? = 0.0
     
-    /// ignore distance
+    /// ignore event from center in % 
     fileprivate(set) open var percentageDistance: CGFloat = 10.0
     
     ///

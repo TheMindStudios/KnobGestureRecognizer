@@ -5,6 +5,14 @@
 [![License](https://img.shields.io/cocoapods/l/KnobGestureRecognizer.svg?style=flat)](http://cocoapods.org/pods/KnobGestureRecognizer)
 [![Platform](https://img.shields.io/cocoapods/p/KnobGestureRecognizer.svg?style=flat)](http://cocoapods.org/pods/KnobGestureRecognizer)
 
+## Features
+
+ - [x] knob gesture
+ - [x] get rotation radians of gesture
+ - [x] set center of knob rotation
+ - [x] get distance from center to touch (radius)
+ - [x] get rotation direction (clockwise/ counter clockwise)
+
 ## Example
 
 To run the example project, clone the repo, and run `pod install` from the Example directory first.
@@ -47,10 +55,30 @@ it, simply add the following line to your Podfile:
 pod "KnobGestureRecognizer"
 ```
 
-## Author
 
-hapichdima, hapichdima@gmail.com
+##Properties
+
+ Rotation in radians
+ ```swift
+ fileprivate(set) open var rotation: CGFloat = 0.0
+
+ Rotation direction
+ ```swift
+ fileprivate(set) open var clockwiseDirection: Bool = true
+
+ Distance from anchor point
+ ```swift
+ fileprivate(set) open var radius: Float? = 0.0
+
+ View
+ ```swift
+ fileprivate(set) var controlView: UIView!
+
+ Knob center
+ ```swift
+ open var anchor: CGPoint?
 
 ## License
 
 KnobGestureRecognizer is available under the MIT license. See the LICENSE file for more info.
+
