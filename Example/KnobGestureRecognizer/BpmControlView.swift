@@ -1,10 +1,3 @@
-//
-//  BpmControlView.swift
-//  Darbuka
-//
-//  Created by Degtyar Sergio on 12/15/16.
-//  Copyright © 2016 MindStudios. All rights reserved.
-//
 
 import UIKit
 import AVFoundation
