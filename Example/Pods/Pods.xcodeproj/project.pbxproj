@@ -1,0 +1,707 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		01D9DF443499E7A4A0272476A7BFBD63 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CBB3DE36805AF21409EC968A9691732F /* Foundation.framework */; };
+		089AB34D5B7949A2807EA5BB641A2BEA /* Pods-KnobGestureRecognizer_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = F2BEB24E8D8EF542ADD56CDA1A1C6405 /* Pods-KnobGestureRecognizer_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		0B0715FABD82320B265E652781E7EDE2 /* Pods-KnobGestureRecognizer_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E44D261C11DDF03670911D69FA87C70 /* Pods-KnobGestureRecognizer_Example-dummy.m */; };
+		21AB02321AEC3AED19744C292E07BEDF /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CBB3DE36805AF21409EC968A9691732F /* Foundation.framework */; };
+		3D4A5CA7AC184343D791CF67862CFA66 /* Pods-KnobGestureRecognizer_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 6EB96722EF28856F5223BCBBACD280AF /* Pods-KnobGestureRecognizer_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		5B0DA35028F4151180E75FC9E5BF26BE /* KnobGestureRecognizer.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6BDB2AB591602E9F306E33C60B9E176 /* KnobGestureRecognizer.swift */; };
+		876B8D722581056A3250D6824F0390D0 /* KnobGestureRecognizer-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = DFF07766D78659F1C55328FBF1A11922 /* KnobGestureRecognizer-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		8BE5C4407F3470C34DEFE1BD36648EAE /* KnobGestureRecognizer-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = BFF091F78D676567EBD3369CA567A33F /* KnobGestureRecognizer-dummy.m */; };
+		A867A1ED20B41E08D8BEDB8DCD41785A /* Pods-KnobGestureRecognizer_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = C5BDFEB4D15A77E661F85B45FEAFDAE9 /* Pods-KnobGestureRecognizer_Tests-dummy.m */; };
+		E9FB010D073121BABC839E296A0D5920 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CBB3DE36805AF21409EC968A9691732F /* Foundation.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		3A24E82B2AA4A063DED52C325E2426BF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 44803A9C26A84D121A04C4A248FC9B70;
+			remoteInfo = KnobGestureRecognizer;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		01CBC1AC6F0431AA3E06F72471949007 /* Pods-KnobGestureRecognizer_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-KnobGestureRecognizer_Example.release.xcconfig"; sourceTree = "<group>"; };
+		08DD329B973AE7D62ECA13106AD74573 /* Pods-KnobGestureRecognizer_Tests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-KnobGestureRecognizer_Tests-resources.sh"; sourceTree = "<group>"; };
+		10C3D1A325338969F63209F91E8C292C /* Pods-KnobGestureRecognizer_Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-KnobGestureRecognizer_Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		1281F3F9E11B1F0561A320E1275A7035 /* KnobGestureRecognizer-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "KnobGestureRecognizer-prefix.pch"; sourceTree = "<group>"; };
+		129A16D68E7B4F787036C743E70F9B7E /* Pods-KnobGestureRecognizer_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-KnobGestureRecognizer_Tests.modulemap"; sourceTree = "<group>"; };
+		251DB0C91885CA11501CBAE276EA0C72 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		259556F318B5A4A7D33BA2CF4227EAD6 /* Pods_KnobGestureRecognizer_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_KnobGestureRecognizer_Example.framework; path = "Pods-KnobGestureRecognizer_Example.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		4533341ADCF200BA5DDD20B7917B3A24 /* KnobGestureRecognizer.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = KnobGestureRecognizer.modulemap; sourceTree = "<group>"; };
+		4E44D261C11DDF03670911D69FA87C70 /* Pods-KnobGestureRecognizer_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-KnobGestureRecognizer_Example-dummy.m"; sourceTree = "<group>"; };
+		5716A277477016DBAE4B535389FF4D4C /* KnobGestureRecognizer.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = KnobGestureRecognizer.framework; path = KnobGestureRecognizer.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		6DA1ACA2DA6CF9B23809C3B8CA680928 /* Pods-KnobGestureRecognizer_Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-KnobGestureRecognizer_Tests-acknowledgements.plist"; sourceTree = "<group>"; };
+		6EB96722EF28856F5223BCBBACD280AF /* Pods-KnobGestureRecognizer_Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-KnobGestureRecognizer_Example-umbrella.h"; sourceTree = "<group>"; };
+		860EEF1C775A25866F8139EAF4B3A4DE /* Pods-KnobGestureRecognizer_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-KnobGestureRecognizer_Tests.debug.xcconfig"; sourceTree = "<group>"; };
+		87C3F3DFB3240D0601EB6BBCACC7D7B1 /* Pods-KnobGestureRecognizer_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-KnobGestureRecognizer_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
+		88DA004E091F77E0C606400961F07259 /* KnobGestureRecognizer.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = KnobGestureRecognizer.xcconfig; sourceTree = "<group>"; };
+		8D0C8447D2FC1C178C3FD1B380E1E0B2 /* Pods-KnobGestureRecognizer_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-KnobGestureRecognizer_Example.debug.xcconfig"; sourceTree = "<group>"; };
+		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		9633883852AFB22A45FF503D3B9FBAF2 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9F5D0ACDD06AF66B0C4D1085FCD269C1 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AF147D99591967C9EA8EE7EB9CBC6DCA /* Pods-KnobGestureRecognizer_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-KnobGestureRecognizer_Example-frameworks.sh"; sourceTree = "<group>"; };
+		B5A28CC54ED0C1032C0E2875A3A05E5C /* Pods-KnobGestureRecognizer_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-KnobGestureRecognizer_Tests.release.xcconfig"; sourceTree = "<group>"; };
+		B6BDB2AB591602E9F306E33C60B9E176 /* KnobGestureRecognizer.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = KnobGestureRecognizer.swift; sourceTree = "<group>"; };
+		BFF091F78D676567EBD3369CA567A33F /* KnobGestureRecognizer-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "KnobGestureRecognizer-dummy.m"; sourceTree = "<group>"; };
+		C5BDFEB4D15A77E661F85B45FEAFDAE9 /* Pods-KnobGestureRecognizer_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-KnobGestureRecognizer_Tests-dummy.m"; sourceTree = "<group>"; };
+		CA0CBF5900139DFC6E128E1B6A90F9B6 /* Pods-KnobGestureRecognizer_Example-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-KnobGestureRecognizer_Example-resources.sh"; sourceTree = "<group>"; };
+		CBB3DE36805AF21409EC968A9691732F /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		CE6642FDA9ECA72F3FC6DE4CA84F29B0 /* Pods-KnobGestureRecognizer_Tests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-KnobGestureRecognizer_Tests-frameworks.sh"; sourceTree = "<group>"; };
+		D0213DAD641D3B646FA2D7914EA39E6F /* Pods-KnobGestureRecognizer_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-KnobGestureRecognizer_Example.modulemap"; sourceTree = "<group>"; };
+		D69F0F7301218FA9718C6B3D4B046584 /* Pods_KnobGestureRecognizer_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_KnobGestureRecognizer_Tests.framework; path = "Pods-KnobGestureRecognizer_Tests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		DD23ADDA3896705243FBB5459B672965 /* Pods-KnobGestureRecognizer_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-KnobGestureRecognizer_Example-acknowledgements.plist"; sourceTree = "<group>"; };
+		DFF07766D78659F1C55328FBF1A11922 /* KnobGestureRecognizer-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "KnobGestureRecognizer-umbrella.h"; sourceTree = "<group>"; };
+		F2BEB24E8D8EF542ADD56CDA1A1C6405 /* Pods-KnobGestureRecognizer_Tests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-KnobGestureRecognizer_Tests-umbrella.h"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		86C065DBEB55F497B7BEB0EF798F928C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				21AB02321AEC3AED19744C292E07BEDF /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		975887E29C43D98A4AC1F4DC2DFA625B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E9FB010D073121BABC839E296A0D5920 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A05F66AD85FB0F44D34AD0E5E735BCDE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				01D9DF443499E7A4A0272476A7BFBD63 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		199A26CDA200008BA0123B8FD7F3D8FA /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				9C3DBCADD9E00B40E27E1296AFD3C700 /* Pods-KnobGestureRecognizer_Example */,
+				96E46B0B6F87AFD05A0E0B9BB17205B1 /* Pods-KnobGestureRecognizer_Tests */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		2D7CC8467376837149A8B8947E85C388 /* KnobGestureRecognizer */ = {
+			isa = PBXGroup;
+			children = (
+				F4FF3C179450D0B4C6D865EDB7BCA4EB /* KnobGestureRecognizer */,
+				83D58030FA93D42ECCEC597E2A48D522 /* Support Files */,
+			);
+			name = KnobGestureRecognizer;
+			path = ../..;
+			sourceTree = "<group>";
+		};
+		7531C8F8DE19F1AA3C8A7AC97A91DC29 /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				CBB3DE36805AF21409EC968A9691732F /* Foundation.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		7DB346D0F39D3F0E887471402A8071AB = {
+			isa = PBXGroup;
+			children = (
+				93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */,
+				D32DC484F9FA0FCE049189B2FD2075C5 /* Development Pods */,
+				BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */,
+				829D5EE003B07DA2879D5300D2B342E5 /* Products */,
+				199A26CDA200008BA0123B8FD7F3D8FA /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		829D5EE003B07DA2879D5300D2B342E5 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				5716A277477016DBAE4B535389FF4D4C /* KnobGestureRecognizer.framework */,
+				259556F318B5A4A7D33BA2CF4227EAD6 /* Pods_KnobGestureRecognizer_Example.framework */,
+				D69F0F7301218FA9718C6B3D4B046584 /* Pods_KnobGestureRecognizer_Tests.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		83D58030FA93D42ECCEC597E2A48D522 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				251DB0C91885CA11501CBAE276EA0C72 /* Info.plist */,
+				4533341ADCF200BA5DDD20B7917B3A24 /* KnobGestureRecognizer.modulemap */,
+				88DA004E091F77E0C606400961F07259 /* KnobGestureRecognizer.xcconfig */,
+				BFF091F78D676567EBD3369CA567A33F /* KnobGestureRecognizer-dummy.m */,
+				1281F3F9E11B1F0561A320E1275A7035 /* KnobGestureRecognizer-prefix.pch */,
+				DFF07766D78659F1C55328FBF1A11922 /* KnobGestureRecognizer-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "Example/Pods/Target Support Files/KnobGestureRecognizer";
+			sourceTree = "<group>";
+		};
+		96E46B0B6F87AFD05A0E0B9BB17205B1 /* Pods-KnobGestureRecognizer_Tests */ = {
+			isa = PBXGroup;
+			children = (
+				9633883852AFB22A45FF503D3B9FBAF2 /* Info.plist */,
+				129A16D68E7B4F787036C743E70F9B7E /* Pods-KnobGestureRecognizer_Tests.modulemap */,
+				10C3D1A325338969F63209F91E8C292C /* Pods-KnobGestureRecognizer_Tests-acknowledgements.markdown */,
+				6DA1ACA2DA6CF9B23809C3B8CA680928 /* Pods-KnobGestureRecognizer_Tests-acknowledgements.plist */,
+				C5BDFEB4D15A77E661F85B45FEAFDAE9 /* Pods-KnobGestureRecognizer_Tests-dummy.m */,
+				CE6642FDA9ECA72F3FC6DE4CA84F29B0 /* Pods-KnobGestureRecognizer_Tests-frameworks.sh */,
+				08DD329B973AE7D62ECA13106AD74573 /* Pods-KnobGestureRecognizer_Tests-resources.sh */,
+				F2BEB24E8D8EF542ADD56CDA1A1C6405 /* Pods-KnobGestureRecognizer_Tests-umbrella.h */,
+				860EEF1C775A25866F8139EAF4B3A4DE /* Pods-KnobGestureRecognizer_Tests.debug.xcconfig */,
+				B5A28CC54ED0C1032C0E2875A3A05E5C /* Pods-KnobGestureRecognizer_Tests.release.xcconfig */,
+			);
+			name = "Pods-KnobGestureRecognizer_Tests";
+			path = "Target Support Files/Pods-KnobGestureRecognizer_Tests";
+			sourceTree = "<group>";
+		};
+		9C3DBCADD9E00B40E27E1296AFD3C700 /* Pods-KnobGestureRecognizer_Example */ = {
+			isa = PBXGroup;
+			children = (
+				9F5D0ACDD06AF66B0C4D1085FCD269C1 /* Info.plist */,
+				D0213DAD641D3B646FA2D7914EA39E6F /* Pods-KnobGestureRecognizer_Example.modulemap */,
+				87C3F3DFB3240D0601EB6BBCACC7D7B1 /* Pods-KnobGestureRecognizer_Example-acknowledgements.markdown */,
+				DD23ADDA3896705243FBB5459B672965 /* Pods-KnobGestureRecognizer_Example-acknowledgements.plist */,
+				4E44D261C11DDF03670911D69FA87C70 /* Pods-KnobGestureRecognizer_Example-dummy.m */,
+				AF147D99591967C9EA8EE7EB9CBC6DCA /* Pods-KnobGestureRecognizer_Example-frameworks.sh */,
+				CA0CBF5900139DFC6E128E1B6A90F9B6 /* Pods-KnobGestureRecognizer_Example-resources.sh */,
+				6EB96722EF28856F5223BCBBACD280AF /* Pods-KnobGestureRecognizer_Example-umbrella.h */,
+				8D0C8447D2FC1C178C3FD1B380E1E0B2 /* Pods-KnobGestureRecognizer_Example.debug.xcconfig */,
+				01CBC1AC6F0431AA3E06F72471949007 /* Pods-KnobGestureRecognizer_Example.release.xcconfig */,
+			);
+			name = "Pods-KnobGestureRecognizer_Example";
+			path = "Target Support Files/Pods-KnobGestureRecognizer_Example";
+			sourceTree = "<group>";
+		};
+		BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				7531C8F8DE19F1AA3C8A7AC97A91DC29 /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		C461390B0DE5E87FB70602CEED410D5C /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				B6BDB2AB591602E9F306E33C60B9E176 /* KnobGestureRecognizer.swift */,
+			);
+			name = Classes;
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		D32DC484F9FA0FCE049189B2FD2075C5 /* Development Pods */ = {
+			isa = PBXGroup;
+			children = (
+				2D7CC8467376837149A8B8947E85C388 /* KnobGestureRecognizer */,
+			);
+			name = "Development Pods";
+			sourceTree = "<group>";
+		};
+		F4FF3C179450D0B4C6D865EDB7BCA4EB /* KnobGestureRecognizer */ = {
+			isa = PBXGroup;
+			children = (
+				C461390B0DE5E87FB70602CEED410D5C /* Classes */,
+			);
+			name = KnobGestureRecognizer;
+			path = KnobGestureRecognizer;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		C83C197C7C959E77D4549438DAD1AD72 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				089AB34D5B7949A2807EA5BB641A2BEA /* Pods-KnobGestureRecognizer_Tests-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F4E74A96D806664EE0B45F599284E91E /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3D4A5CA7AC184343D791CF67862CFA66 /* Pods-KnobGestureRecognizer_Example-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F7690C674927812938C779234CEE09F5 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				876B8D722581056A3250D6824F0390D0 /* KnobGestureRecognizer-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		330D9D94FD17E8F21F2E6B386567A6FD /* Pods-KnobGestureRecognizer_Tests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DF1B6D8560B7AD2D8BE7CD455D3ADBDE /* Build configuration list for PBXNativeTarget "Pods-KnobGestureRecognizer_Tests" */;
+			buildPhases = (
+				06812BDB82D90044BE2B902F12B49196 /* Sources */,
+				86C065DBEB55F497B7BEB0EF798F928C /* Frameworks */,
+				C83C197C7C959E77D4549438DAD1AD72 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Pods-KnobGestureRecognizer_Tests";
+			productName = "Pods-KnobGestureRecognizer_Tests";
+			productReference = D69F0F7301218FA9718C6B3D4B046584 /* Pods_KnobGestureRecognizer_Tests.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		44803A9C26A84D121A04C4A248FC9B70 /* KnobGestureRecognizer */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 951520905BC912D20D341DC710DF3628 /* Build configuration list for PBXNativeTarget "KnobGestureRecognizer" */;
+			buildPhases = (
+				F13F27BEABC18520546F611AF9BFA0DE /* Sources */,
+				A05F66AD85FB0F44D34AD0E5E735BCDE /* Frameworks */,
+				F7690C674927812938C779234CEE09F5 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = KnobGestureRecognizer;
+			productName = KnobGestureRecognizer;
+			productReference = 5716A277477016DBAE4B535389FF4D4C /* KnobGestureRecognizer.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		C418E81DCA5DADD0ADD21A9B5DAAC8EE /* Pods-KnobGestureRecognizer_Example */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 28B8AF09A18124CFE47D37EF2D5EDD7E /* Build configuration list for PBXNativeTarget "Pods-KnobGestureRecognizer_Example" */;
+			buildPhases = (
+				E356801633B91F90398C3F801257CECA /* Sources */,
+				975887E29C43D98A4AC1F4DC2DFA625B /* Frameworks */,
+				F4E74A96D806664EE0B45F599284E91E /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D889A1934B70562420D1CBCBD2EED7DA /* PBXTargetDependency */,
+			);
+			name = "Pods-KnobGestureRecognizer_Example";
+			productName = "Pods-KnobGestureRecognizer_Example";
+			productReference = 259556F318B5A4A7D33BA2CF4227EAD6 /* Pods_KnobGestureRecognizer_Example.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D41D8CD98F00B204E9800998ECF8427E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0730;
+				LastUpgradeCheck = 0700;
+			};
+			buildConfigurationList = 2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
+			productRefGroup = 829D5EE003B07DA2879D5300D2B342E5 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				44803A9C26A84D121A04C4A248FC9B70 /* KnobGestureRecognizer */,
+				C418E81DCA5DADD0ADD21A9B5DAAC8EE /* Pods-KnobGestureRecognizer_Example */,
+				330D9D94FD17E8F21F2E6B386567A6FD /* Pods-KnobGestureRecognizer_Tests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		06812BDB82D90044BE2B902F12B49196 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A867A1ED20B41E08D8BEDB8DCD41785A /* Pods-KnobGestureRecognizer_Tests-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E356801633B91F90398C3F801257CECA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0B0715FABD82320B265E652781E7EDE2 /* Pods-KnobGestureRecognizer_Example-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F13F27BEABC18520546F611AF9BFA0DE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8BE5C4407F3470C34DEFE1BD36648EAE /* KnobGestureRecognizer-dummy.m in Sources */,
+				5B0DA35028F4151180E75FC9E5BF26BE /* KnobGestureRecognizer.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		D889A1934B70562420D1CBCBD2EED7DA /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = KnobGestureRecognizer;
+			target = 44803A9C26A84D121A04C4A248FC9B70 /* KnobGestureRecognizer */;
+			targetProxy = 3A24E82B2AA4A063DED52C325E2426BF /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		36E40BC93223DB79D65DC7396DDD8F68 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 01CBC1AC6F0431AA3E06F72471949007 /* Pods-KnobGestureRecognizer_Example.release.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-KnobGestureRecognizer_Example/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-KnobGestureRecognizer_Example/Pods-KnobGestureRecognizer_Example.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_KnobGestureRecognizer_Example;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		59B042A655B7C20CBAB90E385BF4E4C7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGNING_REQUIRED = NO;
+				COPY_PHASE_STRIP = NO;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_DEBUG=1",
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				ONLY_ACTIVE_ARCH = YES;
+				PROVISIONING_PROFILE_SPECIFIER = NO_SIGNING/;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+		8DAD7F251E339FA9DF3564C34CA6514E /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 88DA004E091F77E0C606400961F07259 /* KnobGestureRecognizer.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/KnobGestureRecognizer/KnobGestureRecognizer-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/KnobGestureRecognizer/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/KnobGestureRecognizer/KnobGestureRecognizer.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = KnobGestureRecognizer;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		A9014FC46EB56847938F862B31429FC5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 88DA004E091F77E0C606400961F07259 /* KnobGestureRecognizer.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/KnobGestureRecognizer/KnobGestureRecognizer-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/KnobGestureRecognizer/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/KnobGestureRecognizer/KnobGestureRecognizer.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = KnobGestureRecognizer;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		AFA5275C837AACC396F9FF6199A4C1AF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8D0C8447D2FC1C178C3FD1B380E1E0B2 /* Pods-KnobGestureRecognizer_Example.debug.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-KnobGestureRecognizer_Example/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-KnobGestureRecognizer_Example/Pods-KnobGestureRecognizer_Example.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_KnobGestureRecognizer_Example;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		B7324857C38B065FEB1EEE3105C2367A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGNING_REQUIRED = NO;
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				PROVISIONING_PROFILE_SPECIFIER = NO_SIGNING/;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		DC94ECDE05FBE7F286F2AC77D487F5FF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 860EEF1C775A25866F8139EAF4B3A4DE /* Pods-KnobGestureRecognizer_Tests.debug.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-KnobGestureRecognizer_Tests/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-KnobGestureRecognizer_Tests/Pods-KnobGestureRecognizer_Tests.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_KnobGestureRecognizer_Tests;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		E147DF1E8E4D99848D2EE2C06F14D00C /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B5A28CC54ED0C1032C0E2875A3A05E5C /* Pods-KnobGestureRecognizer_Tests.release.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-KnobGestureRecognizer_Tests/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-KnobGestureRecognizer_Tests/Pods-KnobGestureRecognizer_Tests.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_KnobGestureRecognizer_Tests;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		28B8AF09A18124CFE47D37EF2D5EDD7E /* Build configuration list for PBXNativeTarget "Pods-KnobGestureRecognizer_Example" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AFA5275C837AACC396F9FF6199A4C1AF /* Debug */,
+				36E40BC93223DB79D65DC7396DDD8F68 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				59B042A655B7C20CBAB90E385BF4E4C7 /* Debug */,
+				B7324857C38B065FEB1EEE3105C2367A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		951520905BC912D20D341DC710DF3628 /* Build configuration list for PBXNativeTarget "KnobGestureRecognizer" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A9014FC46EB56847938F862B31429FC5 /* Debug */,
+				8DAD7F251E339FA9DF3564C34CA6514E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DF1B6D8560B7AD2D8BE7CD455D3ADBDE /* Build configuration list for PBXNativeTarget "Pods-KnobGestureRecognizer_Tests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DC94ECDE05FBE7F286F2AC77D487F5FF /* Debug */,
+				E147DF1E8E4D99848D2EE2C06F14D00C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+}
