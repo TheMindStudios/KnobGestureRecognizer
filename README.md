@@ -24,7 +24,7 @@ To integrate KnobGestureRecognizer into your Xcode project using CocoaPods, spec
 
 ```ruby
 source 'https://github.com/CocoaPods/Specs.git'
-platform :ios, '8.0'
+platform :ios, '9.0'
 
 target 'TargetName' do
 pod 'KnobGestureRecognizer', '~> 1.0'

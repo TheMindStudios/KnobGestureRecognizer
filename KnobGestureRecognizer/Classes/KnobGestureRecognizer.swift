@@ -20,6 +20,9 @@ open class KnobGestureRecognizer: UIGestureRecognizer {
     /// distance from anchor point
     fileprivate(set) open var radius: Float? = 0.0
     
+    /// ignore distance
+    fileprivate(set) open var percentageDistance: CGFloat = 10.0
+    
     ///
     fileprivate(set) var controlView: UIView!
     
@@ -50,7 +53,6 @@ open class KnobGestureRecognizer: UIGestureRecognizer {
             state = .failed
             return
         }
-        guard let touch = touches.first else { return }
     }
     
     override open func touchesMoved(_ touches: Set<UITouch>, with event: UIEvent) {
@@ -79,8 +81,8 @@ open class KnobGestureRecognizer: UIGestureRecognizer {
     func getTouchAngle(_ touch: CGPoint) -> CGFloat {
         
         guard let radius = radius else { return -1 }
-        
-        if radius < Float(controlView.bounds.width/10) && state == .changed {
+        // ignore event near center, 10% of width dafault
+        if radius < Float(controlView.bounds.width/percentageDistance) && state == .changed {
             return -1
         }
         
