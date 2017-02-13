@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16D32" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="vXZ-lx-hvc">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="ufC-wZ-h7g">
+            <objects>
+                <viewController id="vXZ-lx-hvc" customClass="ViewController" customModule="KnobGestureRecognizer_Example" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="jyV-Pf-zRb"/>
+                        <viewControllerLayoutGuide type="bottom" id="2fi-mo-0CV"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="kh9-bI-dsS">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="NNX-Bb-XXY" customClass="BpmControlView" customModule="KnobGestureRecognizer_Example" customModuleProvider="target">
+                                <rect key="frame" x="137.5" y="283.5" width="100" height="100"/>
+                                <subviews>
+                                    <imageView contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bpmControl" highlightedImage="bpmControlActive" highlighted="YES" translatesAutoresizingMaskIntoConstraints="NO" id="3KT-dD-afI">
+                                        <rect key="frame" x="0.0" y="-0.5" width="100" height="100"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="100" id="gG4-Us-6uo"/>
+                                            <constraint firstAttribute="height" constant="100" id="orn-no-ZF5"/>
+                                        </constraints>
+                                    </imageView>
+                                </subviews>
+                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstItem="3KT-dD-afI" firstAttribute="centerX" secondItem="NNX-Bb-XXY" secondAttribute="centerX" id="0pt-RZ-BCN"/>
+                                    <constraint firstAttribute="width" constant="100" id="cWW-Ad-etK"/>
+                                    <constraint firstItem="3KT-dD-afI" firstAttribute="centerY" secondItem="NNX-Bb-XXY" secondAttribute="centerY" id="oBe-7v-1aT"/>
+                                    <constraint firstAttribute="height" constant="100" id="pIx-Vn-kcy"/>
+                                </constraints>
+                                <connections>
+                                    <outlet property="controlView" destination="3KT-dD-afI" id="150-qO-U4O"/>
+                                </connections>
+                            </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MLA-Hy-SLv">
+                                <rect key="frame" x="166" y="415" width="42" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="MLA-Hy-SLv" firstAttribute="top" secondItem="NNX-Bb-XXY" secondAttribute="bottom" constant="30" id="HjC-vT-ee2"/>
+                            <constraint firstItem="NNX-Bb-XXY" firstAttribute="centerX" secondItem="kh9-bI-dsS" secondAttribute="centerX" id="X1N-D4-udM"/>
+                            <constraint firstItem="MLA-Hy-SLv" firstAttribute="centerX" secondItem="kh9-bI-dsS" secondAttribute="centerX" id="aST-Bh-WHA"/>
+                            <constraint firstItem="NNX-Bb-XXY" firstAttribute="centerY" secondItem="kh9-bI-dsS" secondAttribute="centerY" id="fLj-Si-Oor"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="bpmControlView" destination="NNX-Bb-XXY" id="xOr-zi-onO"/>
+                        <outlet property="bpmLabel" destination="MLA-Hy-SLv" id="ba6-3F-T2v"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="24.800000000000001" y="36.431784107946029"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="bpmControl" width="140" height="140"/>
+        <image name="bpmControlActive" width="140" height="140"/>
+    </resources>
+</document>

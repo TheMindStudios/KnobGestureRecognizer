@@ -1,0 +1,16 @@
+PODS:
+  - KnobGestureRecognizer (0.1.0)
+
+DEPENDENCIES:
+  - KnobGestureRecognizer (from `../`)
+
+EXTERNAL SOURCES:
+  KnobGestureRecognizer:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  KnobGestureRecognizer: 66514633c46b4a6a9d28d12847eb8b26de12c8c8
+
+PODFILE CHECKSUM: 28226a64fa8569eb2c2c67005f7c3431131eac2e
+
+COCOAPODS: 1.2.0

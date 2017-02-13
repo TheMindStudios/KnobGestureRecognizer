@@ -1,0 +1,11 @@
+use_frameworks!
+
+target 'KnobGestureRecognizer_Example' do
+  pod 'KnobGestureRecognizer', :path => '../'
+
+  target 'KnobGestureRecognizer_Tests' do
+    inherit! :search_paths
+
+    
+  end
+end
