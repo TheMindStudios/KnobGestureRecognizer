@@ -61,24 +61,24 @@ pod "KnobGestureRecognizer"
  Rotation in radians
  ```swift
  fileprivate(set) open var rotation: CGFloat = 0.0
-
+ ```
  Rotation direction
  ```swift
  fileprivate(set) open var clockwiseDirection: Bool = true
-
+ ```
  Distance from anchor point
  ```swift
  fileprivate(set) open var radius: Float? = 0.0
-
+ ```
  View
  ```swift
  fileprivate(set) var controlView: UIView!
-
+ ```
  Knob center
  ```swift
  open var anchor: CGPoint?
-
-## License
+ ```
+##License
 
 KnobGestureRecognizer is available under the MIT license. See the LICENSE file for more info.
 
