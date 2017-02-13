@@ -24,7 +24,6 @@ Pod::Spec.new do |s|
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
   s.author           = { 'hapichdima' => 'hapich@themindstudios.com' }
   s.source           = { :git => 'https://github.com/TheMindStudios/KnobGestureRecognizer.git', :tag => s.version.to_s }
-  # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
 
   s.ios.deployment_target = '9.0'
 
@@ -34,7 +33,4 @@ Pod::Spec.new do |s|
   #   'KnobGestureRecognizer' => ['KnobGestureRecognizer/Assets/*.png']
   # }
 
-  # s.public_header_files = 'Pod/Classes/**/*.h'
-  # s.frameworks = 'UIKit', 'MapKit'
-  # s.dependency 'AFNetworking', '~> 2.3'
 end

@@ -16,7 +16,7 @@
 		607FACE01AFB9204008FA782 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 607FACDE1AFB9204008FA782 /* LaunchScreen.xib */; };
 		607FACEC1AFB9204008FA782 /* Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACEB1AFB9204008FA782 /* Tests.swift */; };
 		6323D1651E4B6DB300CAA8D3 /* BpmControlView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6323D1641E4B6DB300CAA8D3 /* BpmControlView.swift */; };
-		632762351E4E18B7002B87C2 /* CHANGELOG.md in Sources */ = {isa = PBXBuildFile; fileRef = 632762341E4E18B7002B87C2 /* CHANGELOG.md */; };
+		63B0D0D61E52031D00198540 /* CHANGELOG.md in Sources */ = {isa = PBXBuildFile; fileRef = 63B0D0D51E52031D00198540 /* CHANGELOG.md */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,7 +44,7 @@
 		607FACEA1AFB9204008FA782 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		607FACEB1AFB9204008FA782 /* Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests.swift; sourceTree = "<group>"; };
 		6323D1641E4B6DB300CAA8D3 /* BpmControlView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BpmControlView.swift; sourceTree = "<group>"; };
-		632762341E4E18B7002B87C2 /* CHANGELOG.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = CHANGELOG.md; sourceTree = "<group>"; };
+		63B0D0D51E52031D00198540 /* CHANGELOG.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; name = CHANGELOG.md; path = ../CHANGELOG.md; sourceTree = "<group>"; };
 		B3B452D82C394CA6F9F8057B /* Pods-KnobGestureRecognizer_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KnobGestureRecognizer_Tests.release.xcconfig"; path = "Pods/Target Support Files/Pods-KnobGestureRecognizer_Tests/Pods-KnobGestureRecognizer_Tests.release.xcconfig"; sourceTree = "<group>"; };
 		C50CB6846631614BE744ACE7 /* Pods-KnobGestureRecognizer_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KnobGestureRecognizer_Tests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-KnobGestureRecognizer_Tests/Pods-KnobGestureRecognizer_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		CBF7359CC91F28E8F89E58F0 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
@@ -148,7 +148,7 @@
 		607FACF51AFB993E008FA782 /* Podspec Metadata */ = {
 			isa = PBXGroup;
 			children = (
-				632762341E4E18B7002B87C2 /* CHANGELOG.md */,
+				63B0D0D51E52031D00198540 /* CHANGELOG.md */,
 				D7EF246C173DDF9D5F0978A1 /* KnobGestureRecognizer.podspec */,
 				CBF7359CC91F28E8F89E58F0 /* README.md */,
 				5DD1AAECF73F2AA0EABD6991 /* LICENSE */,
@@ -368,9 +368,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				6323D1651E4B6DB300CAA8D3 /* BpmControlView.swift in Sources */,
+				63B0D0D61E52031D00198540 /* CHANGELOG.md in Sources */,
 				607FACD81AFB9204008FA782 /* ViewController.swift in Sources */,
 				607FACD61AFB9204008FA782 /* AppDelegate.swift in Sources */,
-				632762351E4E18B7002B87C2 /* CHANGELOG.md in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -500,6 +500,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = KnobGestureRecognizer/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				MODULE_NAME = ExampleApp;
 				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.demo.$(PRODUCT_NAME:rfc1034identifier)";
@@ -514,6 +515,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = KnobGestureRecognizer/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				MODULE_NAME = ExampleApp;
 				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.demo.$(PRODUCT_NAME:rfc1034identifier)";

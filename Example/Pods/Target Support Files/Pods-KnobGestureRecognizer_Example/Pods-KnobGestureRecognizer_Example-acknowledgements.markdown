@@ -3,7 +3,7 @@ This application makes use of the following third party libraries:
 
 ## KnobGestureRecognizer
 
-Copyright (c) 2017 hapichdima <hapichdima@gmail.com>
+Copyright (c) 2017 hapichdima <hapiср@gmail.com>
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
