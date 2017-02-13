@@ -81,7 +81,7 @@ open class KnobGestureRecognizer: UIGestureRecognizer {
     func getTouchAngle(_ touch: CGPoint) -> CGFloat {
         
         guard let radius = radius else { return -1 }
-        // ignore event near center, 10% of width dafault
+        // ignore event near center, 10% of width default
         if radius < Float(controlView.bounds.width/percentageDistance) && state == .changed {
             return -1
         }
