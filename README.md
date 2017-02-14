@@ -1,7 +1,7 @@
 # KnobGestureRecognizer
 
 [![Version](https://img.shields.io/cocoapods/v/KnobGestureRecognizer.svg?style=flat)](http://cocoapods.org/pods/KnobGestureRecognizer)
-[![Swift 3.0.x](https://img.shields.io/badge/Swift-3.0.x-orange.svg)
+![Swift 3.0.x](https://img.shields.io/badge/Swift-3.0.x-orange.svg)
 
 
 [![TheMindStudios](https://github.com/TheMindStudios/KnobGestureRecognizer/blob/readme/logo.png?raw=true)](https://themindstudios.com/)
