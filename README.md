@@ -7,11 +7,11 @@
 [![TheMindStudios](https://github.com/TheMindStudios/KnobGestureRecognizer/blob/readme/logo.png?raw=true)](https://themindstudios.com/)
 ## Features
 
- - [x] knob gesture
- - [x] get rotation radians of gesture
- - [x] set center of knob rotation
- - [x] get distance from center to touch (radius)
- - [x] get rotation direction (clockwise/ counter clockwise)
+  - [x] knob gesture
+  - [x] get rotation radians of gesture
+  - [x] set center of knob rotation
+  - [x] get distance from center to touch (radius)
+  - [x] get rotation direction (clockwise/ counter clockwise)
 
 ##Usage
 
@@ -20,7 +20,7 @@
   ```swift
      import KnobGestureRecognizer
   ```
-  2. Add gesture gecognizer `KnobGestureRecognizer` to `BpmControlView`,
+  2. Add gesture gecognizer `KnobGestureRecognizer` to `BpmControlView`
 
   ```swift
      override func awakeFromNib() {
@@ -33,11 +33,13 @@
      } 
   ```
   3. Processing callback 
+
   ```swift
       @objc fileprivate func rotationAction(_ sender: KnobGestureRecognizer) {
         ...
         }
   ```
+
 ##Installation with CocoaPods
 
    To install via CocoaPods add this lines to your Podfile. You need CocoaPods v. 1.1 or higher
@@ -45,7 +47,7 @@
    ```bash
    $ gem install cocoapods
    ```
-#### Podfile
+####Podfile
 
 To integrate KnobGestureRecognizer into your Xcode project using CocoaPods, specify it in your `Podfile`:
 
