@@ -35,6 +35,7 @@ open class KnobGestureRecognizer: UIGestureRecognizer {
         guard let anchor = self.anchor else {  return CGPoint(x: self.controlView.bounds.midX, y: self.controlView.bounds.midY)}
          return anchor
     }()
+    
     // MARK: - Initializers
     
     public init(target: Any?, action: Selector?, to controlView: UIView) {
