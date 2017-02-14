@@ -1,6 +1,5 @@
 # KnobGestureRecognizer
 
-[![CI Status](http://img.shields.io/travis/themindstudios/KnobGestureRecognizer.svg?style=flat)](https://travis-ci.org/TheMindStudios/KnobGestureRecognizer)
 [![Version](https://img.shields.io/cocoapods/v/KnobGestureRecognizer.svg?style=flat)](http://cocoapods.org/pods/KnobGestureRecognizer)
 [![Swift 3.0.x](https://img.shields.io/badge/Swift-3.0.x-orange.svg)]
 ## Features
@@ -10,10 +9,6 @@
  - [x] set center of knob rotation
  - [x] get distance from center to touch (radius)
  - [x] get rotation direction (clockwise/ counter clockwise)
-
-## Example
-
-To run the example project, clone the repo, and run `pod install` from the Example directory first.
 
 ##Usage
 
@@ -34,8 +29,12 @@ To run the example project, clone the repo, and run `pod install` from the Examp
          controlView.addGestureRecognizer(gesture)
      } 
   ```
-   2. Processing callback
-
+   2. Processing callback 
+  ```swift
+      @objc fileprivate func rotationAction(_ sender: KnobGestureRecognizer) {
+        ...
+        }
+  ```
 ## Installation with CocoaPods
 
    To install via CocoaPods add this lines to your Podfile. You need CocoaPods v. 1.1 or higher
