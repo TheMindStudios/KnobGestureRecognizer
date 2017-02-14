@@ -21,7 +21,7 @@ open class KnobGestureRecognizer: UIGestureRecognizer {
     fileprivate(set) open var radius: Float? = 0.0
     
     /// ignore event from center in % 
-    fileprivate(set) open var percentageDistance: CGFloat = 10.0
+    fileprivate(set) open var ignoreDistanceFromCenter: CGFloat = 10.0
     
     ///
     fileprivate(set) var controlView: UIView!
@@ -82,7 +82,7 @@ open class KnobGestureRecognizer: UIGestureRecognizer {
         
         guard let radius = radius else { return -1 }
         // ignore event near center, 10% of width default
-        if radius < Float(controlView.bounds.width/percentageDistance) && state == .changed {
+        if radius < Float(controlView.bounds.width/ignoreDistanceFromCenter) && state == .changed {
             return -1
         }
         

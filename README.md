@@ -1,10 +1,8 @@
 # KnobGestureRecognizer
 
-[![CI Status](http://img.shields.io/travis/hapichdima/KnobGestureRecognizer.svg?style=flat)](https://travis-ci.org/hapichdima/KnobGestureRecognizer)
+[![CI Status](http://img.shields.io/travis/themindstudios/KnobGestureRecognizer.svg?style=flat)](https://travis-ci.org/TheMindStudios/KnobGestureRecognizer)
 [![Version](https://img.shields.io/cocoapods/v/KnobGestureRecognizer.svg?style=flat)](http://cocoapods.org/pods/KnobGestureRecognizer)
-[![License](https://img.shields.io/cocoapods/l/KnobGestureRecognizer.svg?style=flat)](http://cocoapods.org/pods/KnobGestureRecognizer)
-[![Platform](https://img.shields.io/cocoapods/p/KnobGestureRecognizer.svg?style=flat)](http://cocoapods.org/pods/KnobGestureRecognizer)
-
+[![Swift 3.0.x](https://img.shields.io/badge/Swift-3.0.x-orange.svg)]
 ## Features
 
  - [x] knob gesture
@@ -17,44 +15,52 @@
 
 To run the example project, clone the repo, and run `pod install` from the Example directory first.
 
-## Requirements
+##Usage
+
+  1. Import `KnobGestureRecognizer` module to your `BpmControlView` class
+
+  ```swift
+     import KnobGestureRecognizer
+  ```
+  2. Add gesture gecognizer `KnobGestureRecognizer` to `BpmControlView`,
+
+  ```swift
+     override func awakeFromNib() {
+         super.awakeFromNib()
+
+         let gesture = KnobGestureRecognizer(target: self, action: #selector(rotationAction(_:)), to: controlView)
+
+         gesture.delegate = self
+         controlView.addGestureRecognizer(gesture)
+     } 
+  ```
+   2. Processing callback
 
 ## Installation with CocoaPods
 
-[CocoaPods](http://cocoapods.org) is a dependency manager for Objective-C, which automates and simplifies the process of using 3rd-party libraries like KnobGestureRecognizer in your projects. See the . You can install it with the following command:
+   To install via CocoaPods add this lines to your Podfile. You need CocoaPods v. 1.1 or higher
 
-```bash
-$ gem install cocoapods
-```
+   ```bash
+   $ gem install cocoapods
+   ```
 #### Podfile
 
 To integrate KnobGestureRecognizer into your Xcode project using CocoaPods, specify it in your `Podfile`:
 
-```ruby
-source 'https://github.com/CocoaPods/Specs.git'
-platform :ios, '9.0'
-
-target 'TargetName' do
-pod 'KnobGestureRecognizer', '~> 1.0'
-end
-```
+  ```ruby
+   source 'https://github.com/CocoaPods/Specs.git'
+   platform :ios, '9.0'
+   use_frameworks!
+   target 'TargetName' do
+   pod 'KnobGestureRecognizer', '~> 1.0'
+   end
+  ```
 
 Then, run the following command:
 
-```bash
-$ pod install
-```
-
-
-## Installation
-
-KnobGestureRecognizer is available through [CocoaPods](http://cocoapods.org). To install
-it, simply add the following line to your Podfile:
-
-```ruby
-pod "KnobGestureRecognizer"
-```
-
+  ```bash
+  $ pod install
+  ```
 
 ##Properties
 
@@ -69,10 +75,6 @@ pod "KnobGestureRecognizer"
  Distance from anchor point
  ```swift
  fileprivate(set) open var radius: Float? = 0.0
- ```
- View
- ```swift
- fileprivate(set) var controlView: UIView!
  ```
  Knob center
  ```swift
