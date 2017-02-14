@@ -18,14 +18,14 @@ Pod::Spec.new do |s|
 #   * Finally, don't worry about the indent, CocoaPods strips it!
 
   s.description      = 'Knob Gesture Recognizer'
-
+  s.social_media_url = 'https://twitter.com/TheMindStudios'
   s.homepage         = 'https://github.com/TheMindStudios/KnobGestureRecognizer'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
   s.author           = { 'hapichdima' => 'hapich@themindstudios.com' }
   s.source           = { :git => 'https://github.com/TheMindStudios/KnobGestureRecognizer.git', :tag => s.version.to_s }
 
   s.ios.deployment_target = '9.0'
-
+ 
   s.source_files = 'KnobGestureRecognizer/Classes/**/*'
   
   # s.resource_bundles = {
