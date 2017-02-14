@@ -32,7 +32,7 @@
          controlView.addGestureRecognizer(gesture)
      } 
   ```
-   2. Processing callback 
+  3. Processing callback 
   ```swift
       @objc fileprivate func rotationAction(_ sender: KnobGestureRecognizer) {
         ...
