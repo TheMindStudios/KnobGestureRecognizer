@@ -17,7 +17,7 @@ Pod::Spec.new do |s|
 #   * Write the description between the DESC delimiters below.
 #   * Finally, don't worry about the indent, CocoaPods strips it!
 
-  s.description      = 'Knob Gesture Recognizer'
+  s.description      = 'Knob Gesture Recognizer detect circular gestures'
   s.social_media_url = 'https://twitter.com/TheMindStudios'
   s.homepage         = 'https://github.com/TheMindStudios/KnobGestureRecognizer'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }

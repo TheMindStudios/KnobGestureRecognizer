@@ -1,10 +1,3 @@
-//
-//  ViewController.swift
-//  KnobGestureRecognizer
-//
-//  Created by hapichdima on 02/08/2017.
-//  Copyright (c) 2017 hapichdima. All rights reserved.
-//
 
 import UIKit
 
