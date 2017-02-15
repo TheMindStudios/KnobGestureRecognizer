@@ -1,5 +1,5 @@
 PODS:
-  - KnobGestureRecognizer (1.0)
+  - KnobGestureRecognizer (0.1.0)
 
 DEPENDENCIES:
   - KnobGestureRecognizer (from `../`)
@@ -9,7 +9,7 @@ EXTERNAL SOURCES:
     :path: "../"
 
 SPEC CHECKSUMS:
-  KnobGestureRecognizer: e5b7e3b995d003d0aa1138a588e6b8bac3e49d1a
+  KnobGestureRecognizer: b53cf4471daf13caf6b7120fc93fe599077bf873
 
 PODFILE CHECKSUM: 28226a64fa8569eb2c2c67005f7c3431131eac2e
 
