@@ -17,6 +17,8 @@
 		607FACEC1AFB9204008FA782 /* Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACEB1AFB9204008FA782 /* Tests.swift */; };
 		6323D1651E4B6DB300CAA8D3 /* BpmControlView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6323D1641E4B6DB300CAA8D3 /* BpmControlView.swift */; };
 		63B0D0D61E52031D00198540 /* CHANGELOG.md in Sources */ = {isa = PBXBuildFile; fileRef = 63B0D0D51E52031D00198540 /* CHANGELOG.md */; };
+		63E522651E671DB4003CC31E /* TermViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63E522641E671DB4003CC31E /* TermViewController.swift */; };
+		63E522671E682D9F003CC31E /* StyleKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63E522661E682D9F003CC31E /* StyleKit.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -45,6 +47,8 @@
 		607FACEB1AFB9204008FA782 /* Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests.swift; sourceTree = "<group>"; };
 		6323D1641E4B6DB300CAA8D3 /* BpmControlView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BpmControlView.swift; sourceTree = "<group>"; };
 		63B0D0D51E52031D00198540 /* CHANGELOG.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; name = CHANGELOG.md; path = ../CHANGELOG.md; sourceTree = "<group>"; };
+		63E522641E671DB4003CC31E /* TermViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TermViewController.swift; sourceTree = "<group>"; };
+		63E522661E682D9F003CC31E /* StyleKit.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StyleKit.swift; sourceTree = "<group>"; };
 		B3B452D82C394CA6F9F8057B /* Pods-KnobGestureRecognizer_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KnobGestureRecognizer_Tests.release.xcconfig"; path = "Pods/Target Support Files/Pods-KnobGestureRecognizer_Tests/Pods-KnobGestureRecognizer_Tests.release.xcconfig"; sourceTree = "<group>"; };
 		C50CB6846631614BE744ACE7 /* Pods-KnobGestureRecognizer_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KnobGestureRecognizer_Tests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-KnobGestureRecognizer_Tests/Pods-KnobGestureRecognizer_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		CBF7359CC91F28E8F89E58F0 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
@@ -111,6 +115,8 @@
 				6323D1641E4B6DB300CAA8D3 /* BpmControlView.swift */,
 				607FACD51AFB9204008FA782 /* AppDelegate.swift */,
 				607FACD71AFB9204008FA782 /* ViewController.swift */,
+				63E522641E671DB4003CC31E /* TermViewController.swift */,
+				63E522661E682D9F003CC31E /* StyleKit.swift */,
 				607FACD91AFB9204008FA782 /* Main.storyboard */,
 				607FACDC1AFB9204008FA782 /* Images.xcassets */,
 				607FACDE1AFB9204008FA782 /* LaunchScreen.xib */,
@@ -221,10 +227,12 @@
 				TargetAttributes = {
 					607FACCF1AFB9204008FA782 = {
 						CreatedOnToolsVersion = 6.3.1;
+						DevelopmentTeam = 9XP6F43VV9;
 						LastSwiftMigration = 0820;
 					};
 					607FACE41AFB9204008FA782 = {
 						CreatedOnToolsVersion = 6.3.1;
+						DevelopmentTeam = 9XP6F43VV9;
 						LastSwiftMigration = 0820;
 						TestTargetID = 607FACCF1AFB9204008FA782;
 					};
@@ -367,7 +375,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				63E522671E682D9F003CC31E /* StyleKit.swift in Sources */,
 				6323D1651E4B6DB300CAA8D3 /* BpmControlView.swift in Sources */,
+				63E522651E671DB4003CC31E /* TermViewController.swift in Sources */,
 				63B0D0D61E52031D00198540 /* CHANGELOG.md in Sources */,
 				607FACD81AFB9204008FA782 /* ViewController.swift in Sources */,
 				607FACD61AFB9204008FA782 /* AppDelegate.swift in Sources */,
@@ -499,6 +509,7 @@
 			baseConfigurationReference = E667E43C5A15227BBCE043CA /* Pods-KnobGestureRecognizer_Example.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 9XP6F43VV9;
 				INFOPLIST_FILE = KnobGestureRecognizer/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -514,6 +525,7 @@
 			baseConfigurationReference = DAFC9914D625FD5622427490 /* Pods-KnobGestureRecognizer_Example.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 9XP6F43VV9;
 				INFOPLIST_FILE = KnobGestureRecognizer/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -528,6 +540,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = C50CB6846631614BE744ACE7 /* Pods-KnobGestureRecognizer_Tests.debug.xcconfig */;
 			buildSettings = {
+				DEVELOPMENT_TEAM = 9XP6F43VV9;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(SDKROOT)/Developer/Library/Frameworks",
 					"$(inherited)",
@@ -548,6 +561,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = B3B452D82C394CA6F9F8057B /* Pods-KnobGestureRecognizer_Tests.release.xcconfig */;
 			buildSettings = {
+				DEVELOPMENT_TEAM = 9XP6F43VV9;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(SDKROOT)/Developer/Library/Frameworks",
 					"$(inherited)",
