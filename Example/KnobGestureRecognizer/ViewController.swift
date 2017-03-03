@@ -8,17 +8,13 @@ class ViewController: UIViewController {
             bpmControlView.delegate = self
         }
     }
+    
     @IBOutlet var bpmLabel: UILabel!
     
     override func viewDidLoad() {
         super.viewDidLoad()
         bpmLabel.text = "\(bpmControlView.bpmValue)"
     }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-    }
-
 }
 
 extension ViewController: BpmControlViewDelegate {

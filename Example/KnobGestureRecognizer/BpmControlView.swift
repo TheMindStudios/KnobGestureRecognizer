@@ -44,8 +44,6 @@ class BpmControlView: UIView {
     fileprivate var bearing: CGFloat = 0.0
     fileprivate var oldBearing: CGFloat = 0.0
     
-    fileprivate var feedbackGenerator: AnyObject?
-    
     // MARK: - LifeCycle
     
     override func awakeFromNib() {
@@ -62,10 +60,9 @@ class BpmControlView: UIView {
 
 extension BpmControlView {
     
-    fileprivate func feedbackGeneratorHandler() {
-        if #available(iOS 9.0, *) {
-            AudioServicesPlaySystemSoundWithCompletion(1104, nil)
-        }
+    fileprivate func generateFeedback() {
+        
+        AudioServicesPlaySystemSoundWithCompletion(1104, nil)
         if #available(iOS 10.0, *) {
             
             let generator = UIImpactFeedbackGenerator(style: .medium)
@@ -79,9 +76,9 @@ extension BpmControlView {
         
         if round(bearing) > oldBearing {
             bpmValue += 1
-            feedbackGeneratorHandler()
+            generateFeedback()
         } else if round(bearing) < oldBearing {
-            feedbackGeneratorHandler()
+            generateFeedback()
             bpmValue -= 1
         }
         oldBearing = round(bearing)
@@ -120,5 +117,4 @@ extension BpmControlView: UIGestureRecognizerDelegate {
         
         return true
     }
-    
 }

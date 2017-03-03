@@ -36,7 +36,7 @@
 
   ```swift
       @objc fileprivate func rotationAction(_ sender: KnobGestureRecognizer) {
-        ...
+           ...
         }
   ```
 
@@ -44,27 +44,28 @@
 
    To install via CocoaPods add this lines to your Podfile. You need CocoaPods v. 1.1 or higher
 
-   ```bash
-   $ gem install cocoapods
-   ```
+```bash
+  $ gem install cocoapods
+```
 ####Podfile
 
 To integrate KnobGestureRecognizer into your Xcode project using CocoaPods, specify it in your `Podfile`:
 
-  ```ruby
-   source 'https://github.com/CocoaPods/Specs.git'
-   platform :ios, '9.0'
-   use_frameworks!
-   target 'TargetName' do
-   pod 'KnobGestureRecognizer', '~> 1.0'
-   end
-  ```
+```ruby
+source 'https://github.com/CocoaPods/Specs.git'
+platform :ios, '9.0'
+use_frameworks!
+
+target 'TargetName' do
+  pod 'KnobGestureRecognizer', '~> 1.0'
+end
+```
 
 Then, run the following command:
 
-  ```bash
+```bash
   $ pod install
-  ```
+```
 
 ##Properties
 

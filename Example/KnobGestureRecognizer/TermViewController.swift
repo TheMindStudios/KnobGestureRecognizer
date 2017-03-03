@@ -11,7 +11,6 @@ import AVFoundation
 import KnobGestureRecognizer
 
 class TermViewController: UIViewController {
-    
 
     @IBOutlet weak var controlView: UIImageView!
     @IBOutlet weak var backgroundImageView: UIImageView!
@@ -38,18 +37,7 @@ class TermViewController: UIViewController {
             default:
                 break
             }
-            
-            DispatchQueue.global(qos: .background).async { [weak self]
-                () -> Void in
-                if let fColor = self?.midleColor(firstColor: (self?.blueFirstColor)!, secondColor: (self?.rerFirstColor)!, colorRatio: (self?.value)!/(self?.maxValue)!),
-                   let sColor = self?.midleColor(firstColor: (self?.blueSecondColor)!, secondColor: (self?.rerSecondColor)!, colorRatio: (self?.value)!/(self?.maxValue)!) {
-                    
-                    let image = StyleKit.imageOfBackgroundImage(imageSize: (self?.view.bounds.size)!, colorFirst: fColor, colorSecond: sColor)
-                    DispatchQueue.main.async {
-                        self?.backgroundImageView.image = image
-                    }
-                }
-            }
+            self.redrawImage()
         }
     }
 
@@ -62,47 +50,15 @@ class TermViewController: UIViewController {
         controlView.addGestureRecognizer(gesture)
 
     }
-    
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-    }
-    
-    
-    func midleColor(firstColor: UIColor, secondColor: UIColor, colorRatio: CGFloat) -> UIColor {
-        
-        var firstRed : CGFloat = 0
-        var firstGreen : CGFloat = 0
-        var firstBlue : CGFloat = 0
-        var firstAlpha: CGFloat = 0
-        
-        firstColor.getRed(&firstRed, green: &firstGreen, blue: &firstBlue, alpha: &firstAlpha)
-        
-        var secondRed : CGFloat = 0
-        var secondGreen : CGFloat = 0
-        var secondBlue : CGFloat = 0
-        var secondAlpha: CGFloat = 0
-        
-        secondColor.getRed(&secondRed, green: &secondGreen, blue: &secondBlue, alpha: &secondAlpha)
-        
-        let red = firstRed + (secondRed - firstRed) * colorRatio
-        let green = firstGreen + (secondGreen - firstGreen) * colorRatio
-        let blue = firstBlue + (secondBlue - firstBlue) * colorRatio
-        
-        let color = UIColor(red: CGFloat(red), green: CGFloat(green) , blue: CGFloat(blue), alpha: 1.000)
-        
-        return color
-    }
 }
 
 // MARK: - Private Methods
 
 extension TermViewController {
     
-    fileprivate func feedbackGeneratorHandler() {
-        
-        if #available(iOS 9.0, *) {
-            AudioServicesPlaySystemSoundWithCompletion(1104, nil)
-        }
+    fileprivate func generateFeedback() {
+      
+        AudioServicesPlaySystemSoundWithCompletion(1104, nil)
         if #available(iOS 10.0, *) {
             
             let generator = UIImpactFeedbackGenerator(style: .medium)
@@ -116,9 +72,9 @@ extension TermViewController {
         
         if round(bearing) > oldBearing {
             value += 1
-            feedbackGeneratorHandler()
+            generateFeedback()
         } else if round(bearing) < oldBearing {
-            feedbackGeneratorHandler()
+            generateFeedback()
             value -= 1
         }
 
@@ -147,6 +103,47 @@ extension TermViewController {
         break
         }
     }
+    
+    fileprivate func redrawImage() {
+        
+        DispatchQueue.global(qos: .background).async { [weak self]
+            () -> Void in
+            if let fColor = self?.midleColor(firstColor: (self?.blueFirstColor)!, secondColor: (self?.rerFirstColor)!, colorRatio: (self?.value)!/(self?.maxValue)!),
+                let sColor = self?.midleColor(firstColor: (self?.blueSecondColor)!, secondColor: (self?.rerSecondColor)!, colorRatio: (self?.value)!/(self?.maxValue)!) {
+                
+                let image = StyleKit.imageOfBackgroundImage(imageSize: (self?.view.bounds.size)!, colorFirst: fColor, colorSecond: sColor)
+                DispatchQueue.main.async {
+                    self?.backgroundImageView.image = image
+                }
+            }
+        }
+    }
+    
+    fileprivate func midleColor(firstColor: UIColor, secondColor: UIColor, colorRatio: CGFloat) -> UIColor {
+        
+        var firstRed : CGFloat = 0
+        var firstGreen : CGFloat = 0
+        var firstBlue : CGFloat = 0
+        var firstAlpha: CGFloat = 0
+        
+        firstColor.getRed(&firstRed, green: &firstGreen, blue: &firstBlue, alpha: &firstAlpha)
+        
+        var secondRed : CGFloat = 0
+        var secondGreen : CGFloat = 0
+        var secondBlue : CGFloat = 0
+        var secondAlpha: CGFloat = 0
+        
+        secondColor.getRed(&secondRed, green: &secondGreen, blue: &secondBlue, alpha: &secondAlpha)
+        
+        let red = firstRed + (secondRed - firstRed) * colorRatio
+        let green = firstGreen + (secondGreen - firstGreen) * colorRatio
+        let blue = firstBlue + (secondBlue - firstBlue) * colorRatio
+        
+        let color = UIColor(red: CGFloat(red), green: CGFloat(green) , blue: CGFloat(blue), alpha: 1.000)
+        
+        return color
+    }
+
 }
 
 // MARK: - UIGestureRecognizerDelegate
@@ -155,7 +152,6 @@ extension TermViewController: UIGestureRecognizerDelegate {
     
     func gestureRecognizer(_ gestureRecognizer: UIGestureRecognizer, shouldReceive touch: UITouch) -> Bool {
         
-        controlView.isHighlighted = true
         return true
     }
 }
