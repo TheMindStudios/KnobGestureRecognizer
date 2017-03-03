@@ -87,8 +87,8 @@ open class KnobGestureRecognizer: UIGestureRecognizer {
             return -1
         }
         
-        let x: CGFloat = touch.x - controlView.bounds.midX
-        let y: CGFloat = -(touch.y - controlView.bounds.midY)
+        let x: CGFloat = touch.x - center.x
+        let y: CGFloat = -(touch.y - center.y)
         
         let arctan: CGFloat = CGFloat(atanf(Float(x / y)))
         
@@ -122,7 +122,6 @@ open class KnobGestureRecognizer: UIGestureRecognizer {
     
     fileprivate func calculateDistance(fromCenter point: CGPoint) -> Float {
         
-        let center = CGPoint(x: CGFloat(controlView.bounds.midX), y: CGFloat(controlView.bounds.midY))
         let dx: CGFloat = CGFloat(point.x - center.x)
         let dy: CGFloat = CGFloat(point.y - center.y)
         return sqrt(Float(dx * dx + dy * dy))

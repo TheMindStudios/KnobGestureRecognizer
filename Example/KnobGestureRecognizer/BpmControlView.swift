@@ -44,8 +44,6 @@ class BpmControlView: UIView {
     fileprivate var bearing: CGFloat = 0.0
     fileprivate var oldBearing: CGFloat = 0.0
     
-    fileprivate var feedbackGenerator: AnyObject?
-    
     // MARK: - LifeCycle
     
     override func awakeFromNib() {
@@ -62,16 +60,13 @@ class BpmControlView: UIView {
 
 extension BpmControlView {
     
-    fileprivate func feedbackGeneratorHandler() {
-        if #available(iOS 9.0, *) {
-            AudioServicesPlaySystemSoundWithCompletion(1104, nil)
-        }
+    fileprivate func generateFeedback() {
+        
+        AudioServicesPlaySystemSoundWithCompletion(1104, nil)
         if #available(iOS 10.0, *) {
-            guard let feedbackGenerator = feedbackGenerator as? UISelectionFeedbackGenerator else {
-                return
-            }
-            feedbackGenerator.selectionChanged()
-            feedbackGenerator.prepare()
+            
+            let generator = UIImpactFeedbackGenerator(style: .medium)
+            generator.impactOccurred()
         }
     }
     
@@ -81,9 +76,9 @@ extension BpmControlView {
         
         if round(bearing) > oldBearing {
             bpmValue += 1
-            feedbackGeneratorHandler()
+            generateFeedback()
         } else if round(bearing) < oldBearing {
-            feedbackGeneratorHandler()
+            generateFeedback()
             bpmValue -= 1
         }
         oldBearing = round(bearing)
@@ -99,14 +94,6 @@ extension BpmControlView {
         case .began:
             controlView.isHighlighted = true
             bearing = 0.0
-            
-            if #available(iOS 10.0, *) {
-                guard var feedbackGenerator = feedbackGenerator as? UISelectionFeedbackGenerator else {
-                    return
-                }
-                feedbackGenerator = UISelectionFeedbackGenerator()
-                feedbackGenerator.prepare()
-            }
             gestureHandler(sender)
             
         case .changed:
@@ -114,10 +101,6 @@ extension BpmControlView {
         case .ended:
              controlView.isHighlighted = false
         default:
-            if #available(iOS 10.0, *) {
-                feedbackGenerator = nil
-            }
-           
             delegate?.bpmControlView(self, didChange: .ended)
         }
     }
@@ -134,5 +117,4 @@ extension BpmControlView: UIGestureRecognizerDelegate {
         
         return true
     }
-    
 }
