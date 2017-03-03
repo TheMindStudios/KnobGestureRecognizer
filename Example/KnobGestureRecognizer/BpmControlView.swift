@@ -67,11 +67,9 @@ extension BpmControlView {
             AudioServicesPlaySystemSoundWithCompletion(1104, nil)
         }
         if #available(iOS 10.0, *) {
-            guard let feedbackGenerator = feedbackGenerator as? UISelectionFeedbackGenerator else {
-                return
-            }
-            feedbackGenerator.selectionChanged()
-            feedbackGenerator.prepare()
+            
+            let generator = UIImpactFeedbackGenerator(style: .medium)
+            generator.impactOccurred()
         }
     }
     
@@ -99,14 +97,6 @@ extension BpmControlView {
         case .began:
             controlView.isHighlighted = true
             bearing = 0.0
-            
-            if #available(iOS 10.0, *) {
-                guard var feedbackGenerator = feedbackGenerator as? UISelectionFeedbackGenerator else {
-                    return
-                }
-                feedbackGenerator = UISelectionFeedbackGenerator()
-                feedbackGenerator.prepare()
-            }
             gestureHandler(sender)
             
         case .changed:
@@ -114,10 +104,6 @@ extension BpmControlView {
         case .ended:
              controlView.isHighlighted = false
         default:
-            if #available(iOS 10.0, *) {
-                feedbackGenerator = nil
-            }
-           
             delegate?.bpmControlView(self, didChange: .ended)
         }
     }

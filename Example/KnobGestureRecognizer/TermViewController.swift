@@ -24,11 +24,11 @@ class TermViewController: UIViewController {
     
     var maxValue: CGFloat = 100
     var minValue: CGFloat = 0
-    var radiansCount: CGFloat = 30
+    var radiansCount: CGFloat = 15
     fileprivate var bearing: CGFloat = 0.0
     fileprivate var oldBearing: CGFloat = 0.0
     
-    fileprivate var value: CGFloat = 10 {
+    fileprivate var value: CGFloat = 0 {
         didSet {
             switch value {
             case let x where x < minValue:
@@ -39,14 +39,19 @@ class TermViewController: UIViewController {
                 break
             }
             
-            let fColor = midleColor(firstColor: blueFirstColor, secondColor: rerFirstColor, colorRatio: value/self.maxValue)
-            let sColor = midleColor(firstColor: blueSecondColor, secondColor: rerSecondColor, colorRatio: value/self.maxValue)
-            
-            self.backgroundImageView.image = StyleKit.imageOfBackgroundImage(imageSize: view.bounds.size, colorFirst: fColor, colorSecond: sColor)
+            DispatchQueue.global(qos: .background).async { [weak self]
+                () -> Void in
+                if let fColor = self?.midleColor(firstColor: (self?.blueFirstColor)!, secondColor: (self?.rerFirstColor)!, colorRatio: (self?.value)!/(self?.maxValue)!),
+                   let sColor = self?.midleColor(firstColor: (self?.blueSecondColor)!, secondColor: (self?.rerSecondColor)!, colorRatio: (self?.value)!/(self?.maxValue)!) {
+                    
+                    let image = StyleKit.imageOfBackgroundImage(imageSize: (self?.view.bounds.size)!, colorFirst: fColor, colorSecond: sColor)
+                    DispatchQueue.main.async {
+                        self?.backgroundImageView.image = image
+                    }
+                }
+            }
         }
     }
-    
-    fileprivate var feedbackGenerator: AnyObject?
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -94,21 +99,20 @@ class TermViewController: UIViewController {
 extension TermViewController {
     
     fileprivate func feedbackGeneratorHandler() {
+        
         if #available(iOS 9.0, *) {
             AudioServicesPlaySystemSoundWithCompletion(1104, nil)
         }
         if #available(iOS 10.0, *) {
-            guard let feedbackGenerator = feedbackGenerator as? UISelectionFeedbackGenerator else {
-                return
-            }
-            feedbackGenerator.selectionChanged()
-            feedbackGenerator.prepare()
+            
+            let generator = UIImpactFeedbackGenerator(style: .medium)
+            generator.impactOccurred()
         }
     }
     
     fileprivate func gestureHandler(_ sender: KnobGestureRecognizer) {
         
-        bearing +=  radiansCount/2 * sender.rotation / .pi
+        bearing +=  radiansCount * sender.rotation / .pi
         
         if round(bearing) > oldBearing {
             value += 1
@@ -117,13 +121,12 @@ extension TermViewController {
             feedbackGeneratorHandler()
             value -= 1
         }
-        
-        print("\(value)")
+
         oldBearing = round(bearing)
         
-        let viewTransform = controlView.transform
+        let viewTransform = self.controlView.transform
         let newTransform = viewTransform.rotated(by: sender.rotation)
-        controlView.transform = newTransform
+        self.controlView.transform = newTransform
     }
     
     @objc fileprivate func rotationAction(_ sender: KnobGestureRecognizer) {
@@ -132,14 +135,7 @@ extension TermViewController {
         case .began:
             controlView.isHighlighted = true
             bearing = 0.0
-            
-            if #available(iOS 10.0, *) {
-                guard var feedbackGenerator = feedbackGenerator as? UISelectionFeedbackGenerator else {
-                    return
-                }
-                feedbackGenerator = UISelectionFeedbackGenerator()
-                feedbackGenerator.prepare()
-            }
+
             gestureHandler(sender)
             
         case .changed:
@@ -147,9 +143,8 @@ extension TermViewController {
         case .ended:
             controlView.isHighlighted = false
         default:
-            if #available(iOS 10.0, *) {
-                feedbackGenerator = nil
-            }
+           
+        break
         }
     }
 }
@@ -161,9 +156,7 @@ extension TermViewController: UIGestureRecognizerDelegate {
     func gestureRecognizer(_ gestureRecognizer: UIGestureRecognizer, shouldReceive touch: UITouch) -> Bool {
         
         controlView.isHighlighted = true
-        
         return true
     }
-    
 }
 
