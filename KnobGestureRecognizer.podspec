@@ -11,7 +11,8 @@ Pod::Spec.new do |s|
   s.version          = '1.0.0'
   s.summary          = 'Knob Gesture Recognizer'
 
-  s.description      = 'Knob Gesture Recognizer detect circular gestures'
+  s.description      = 'Knob Gesture Recognizer which detects circular gestures'
+
   s.social_media_url = 'https://twitter.com/TheMindStudios'
   s.homepage         = 'https://github.com/TheMindStudios/KnobGestureRecognizer'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
