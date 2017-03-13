@@ -13,6 +13,10 @@
   - [x] get distance from center to touch (radius)
   - [x] get rotation direction (clockwise/ counter clockwise)
 
+[![Example] (https://github.com/TheMindStudios/KnobGestureRecognizer/blob/readme/mov1.gif)]
+
+[![Example] (https://github.com/TheMindStudios/KnobGestureRecognizer/blob/readme/mov2.gif)]
+
 ##Usage
 
   1. Import `KnobGestureRecognizer` module to your `BpmControlView` class
