@@ -15,12 +15,12 @@
 
 ##Usage
 
-  1. Import `KnobGestureRecognizer` module to your `BpmControlView` class
+  1. Import `KnobGestureRecognizer` module to your `UIView` class/subclass
 
   ```swift
      import KnobGestureRecognizer
   ```
-  2. Add gesture gecognizer `KnobGestureRecognizer` to `BpmControlView`
+  2. Add gesture recognizer `KnobGestureRecognizer` to view
 
   ```swift
      override func awakeFromNib() {
