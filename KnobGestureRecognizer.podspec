@@ -1,16 +1,8 @@
-#
-# Be sure to run `pod lib lint KnobGestureRecognizer.podspec' to ensure this is a
-# valid spec before submitting.
-#
-# Any lines starting with a # are optional, but their use is encouraged
-# To learn more about a Podspec see http://guides.cocoapods.org/syntax/podspec.html
-#
 
 Pod::Spec.new do |s|
   s.name             = 'KnobGestureRecognizer'
   s.version          = '1.0.0'
   s.summary          = 'Knob Gesture Recognizer'
-
   s.description      = 'Knob Gesture Recognizer which detects circular gestures'
 
   s.social_media_url = 'https://twitter.com/TheMindStudios'
