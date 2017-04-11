@@ -4,7 +4,7 @@
 ![Swift 3.0.x](https://img.shields.io/badge/Swift-3.0.x-orange.svg)
 
 
-[![TheMindStudios](https://github.com/TheMindStudios/KnobGestureRecognizer/blob/readme/logo.png?raw=true)](https://themindstudios.com/)
+[![TheMindStudios](https://github.com/TheMindStudios/KnobGestureRecognizer/blob/master/logo.png?raw=true)](https://themindstudios.com/)
 ## Features
 
   - [x] knob gesture
@@ -13,7 +13,10 @@
   - [x] get distance from center to touch (radius)
   - [x] get rotation direction (clockwise/ counter clockwise)
 
-##Usage
+![Example](https://github.com/TheMindStudios/KnobGestureRecognizer/blob/master/mov1.gif)
+![Example](https://github.com/TheMindStudios/KnobGestureRecognizer/blob/master/mov2.gif)
+
+## Usage
 
   1. Import `KnobGestureRecognizer` module to your `UIView` class/subclass
 
@@ -40,14 +43,14 @@
         }
   ```
 
-##Installation with CocoaPods
+## Installation with CocoaPods
 
    To install via CocoaPods add this lines to your Podfile. You need CocoaPods v. 1.1 or higher
 
 ```bash
   $ gem install cocoapods
 ```
-####Podfile
+#### Podfile
 
 To integrate KnobGestureRecognizer into your Xcode project using CocoaPods, specify it in your `Podfile`:
 
@@ -67,7 +70,7 @@ Then, run the following command:
   $ pod install
 ```
 
-##Properties
+## Properties
 
  Rotation in radians
  ```swift
@@ -85,7 +88,7 @@ Then, run the following command:
  ```swift
  open var anchor: CGPoint?
  ```
-##License
+## License
 
 KnobGestureRecognizer is available under the MIT license. See the LICENSE file for more info.
 
